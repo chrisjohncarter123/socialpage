@@ -1,0 +1,75 @@
+terminal commands:
+curl 'localhost:8080/demo/add?name=First&email=someemail@someemailprovider.com'
+curl 'localhost:8080/demo/all'
+
+Requirements:
+
+
+    Back End:
+
+        Login User
+        Logout User
+        Create User
+        Delete User
+        Update User
+        Find User
+
+        Find User Post by
+        Create User Post
+        Delete User Post
+        Update User Post
+
+        Find Posts for User's Homepage
+        Find Posts for Specific User
+
+        Create FriendRequest
+        Delete FriendRequest
+        Accept FriendRequest
+        Find All FriendRequest
+
+    Front End
+
+        Welcome Page
+            Login
+            Create Account
+
+        View Newsfeed
+            Create Post
+            View User Posts for All Friends
+
+        View User Page
+            Create Post
+            User
+            Posts
+            Friends
+
+            Settings Page
+                Update User
+
+        Post
+            Comment
+            Update
+
+
+
+Code Design:
+    Entities:
+
+        User
+            Name
+            Email
+            Password
+        Post
+            User
+            Date
+            Contents
+        Login
+            Email
+            Password
+        LoggedIn
+            User
+        UserFriendship
+            User
+            User
+
+
