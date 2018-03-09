@@ -23,14 +23,14 @@ public class UserController {
 
     @PostMapping(path="/postadd")
     @ResponseBody
-    public String createNewUser(@RequestBody String user) {
+    public String createNewUser(@RequestBody String name, @RequestBody String email, @RequestBody String password) {
 
         //@ResponseBody means the return value is a response value, not a view name
         //@RequestParam means the value is from the GET or POST request
 
         //ResponseEntiry<String>
 
-        return "saved" + user;
+        return "saved" + name + email + password;
 
         /*
         if(userService.doesUserWithEmailExist(email)){
